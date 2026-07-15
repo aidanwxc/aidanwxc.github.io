@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aidan Wong Xiu Chen — Mechatronic Engineering Portfolio</title>
+<meta name="description" content="Portfolio of Aidan Wong Xiu Chen, Mechatronic Engineering student at Curtin University, Perth. Projects, skills, achievements, and contact.">
+<meta property="og:title" content="Aidan Wong Xiu Chen — Mechatronic Engineering Portfolio">
+<meta property="og:description" content="Portfolio of Aidan Wong Xiu Chen, Mechatronic Engineering student at Curtin University, Perth.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%227%22 fill=%22%2307050f%22/><circle cx=%2212%22 cy=%2212%22 r=%226%22 fill=%22none%22 stroke=%22%238b5cf6%22 stroke-width=%222%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="glow-field" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+<canvas id="cursor-trail" aria-hidden="true"></canvas>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="Aidan Wong Xiu Chen — home">AW<span class="dot">.</span></a>
+
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="local-time" id="local-time" aria-label="Current time in Perth, Australia">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+      <span id="local-time-value">&mdash;:&mdash;&mdash;</span> AWST
+    </p>
+
+    <a class="btn btn-ghost nav-resume" href="assets/resume.pdf" download>Resume</a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span>Available for internships &amp; grad roles, 2027&ndash;2028</p>
+        <h1>Aidan Wong<br><span class="accent-text">Xiu Chen</span></h1>
+        <p class="hero-role"><span id="typewriter"></span><span class="type-cursor" aria-hidden="true"></span></p>
+        <p class="hero-lede">Third-year engineering student building at the intersection of code, circuits, and mechanisms — currently deep in embedded systems, controls, and turning coursework into working hardware.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-outline" href="assets/resume.pdf" download>Download resume</a>
+        </div>
+
+        <ul class="hero-social" aria-label="Social links">
+          <li>
+            <a href="https://github.com/aidanwxc" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.61-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.74 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/aidan-wong-95434132b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.4 8.75h3.47V21H3.4V8.75zm6.02 0h3.33v1.68h.05c.46-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.35V21h-3.47v-5.42c0-1.29-.02-2.96-1.8-2.96-1.8 0-2.08 1.41-2.08 2.86V21H9.42V8.75z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:aidanwongxc@hotmail.com" aria-label="Send email">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-window__bar">
+            <span class="code-dot code-dot--red"></span>
+            <span class="code-dot code-dot--yellow"></span>
+            <span class="code-dot code-dot--green"></span>
+            <span class="code-window__title">main.c</span>
+          </div>
+          <pre class="code-window__body" id="code-lines"><code><span class="cl"><span class="tk-com">// third-year mechatronics, still debugging</span></span>
+<span class="cl"><span class="tk-kw">void</span> <span class="tk-fn">setup</span>() {</span>
+<span class="cl">  <span class="tk-fn">pinMode</span>(LED, OUTPUT);</span>
+<span class="cl">  <span class="tk-fn">Serial</span>.<span class="tk-fn">begin</span>(<span class="tk-num">9600</span>);</span>
+<span class="cl">}</span>
+<span class="cl"></span>
+<span class="cl"><span class="tk-kw">void</span> <span class="tk-fn">loop</span>() {</span>
+<span class="cl">  <span class="tk-fn">digitalWrite</span>(LED, HIGH);</span>
+<span class="cl">  <span class="tk-fn">delay</span>(<span class="tk-num">500</span>);</span>
+<span class="cl">  <span class="tk-fn">digitalWrite</span>(LED, LOW);</span>
+<span class="cl">  <span class="tk-fn">delay</span>(<span class="tk-num">500</span>);</span>
+<span class="cl">}</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-kicker">About</p>
+      <h2 class="section-title">Who I am</h2>
+
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="assets/headshot.jpg" alt="Photo of Aidan Wong Xiu Chen" loading="lazy"
+                 onerror="this.closest('.photo-frame').classList.add('photo-missing'); this.remove();">
+            <div class="photo-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+              <span>Add assets/headshot.jpg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p>I'm a third-year Bachelor of Engineering (Honours) student majoring in Mechatronic Engineering at Curtin University in Perth, Western Australia — expected to graduate in 2028. I completed my Foundation in Engineering at Swinburne University of Technology, Sarawak, with a CGPA of 3.89/4.00.</p>
+          <p>Mechatronics sits at the overlap of software, electronics, and mechanical systems — which is exactly why it holds my attention. Current focus is embedded systems and microcontroller programming, alongside self-directed work in Python and MATLAB, with a growing interest in robotics and control systems.</p>
+          <p>Outside of engineering, I've competed as a state-level squash player since age 13 and coach the sport part-time. I'm also trilingual in English, Mandarin, and Malay.</p>
+
+          <dl class="fact-strip">
+            <div class="fact"><dt>Location</dt><dd>Perth, WA</dd></div>
+            <div class="fact"><dt>University</dt><dd>Curtin University</dd></div>
+            <div class="fact"><dt>Year</dt><dd>3rd Year</dd></div>
+            <div class="fact"><dt>Graduating</dt><dd>2028</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-kicker">Skills</p>
+      <h2 class="section-title">What I work with</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3"/><path d="M16 9l4 3-4 3"/><path d="M13 6l-2 12"/></svg>
+          </div>
+          <h3>Programming</h3>
+          <ul class="tag-list"><li>Python</li><li>C</li><li>MATLAB</li></ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></svg>
+          </div>
+          <h3>Embedded &amp; Electronics</h3>
+          <ul class="tag-list"><li>Arduino</li><li>Microcontroller Programming (C)</li></ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>
+          </div>
+          <h3>Coursework Focus</h3>
+          <ul class="tag-list"><li>Embedded Systems</li><li>Controls &amp; Dynamics</li><li>Mechanics of Materials</li></ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18M12 3a9 9 0 0 0 0 18M3 12h18"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <ul class="tag-list"><li>English</li><li>Mandarin</li><li>Malay</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-kicker">Projects</p>
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-intro">A growing collection of coursework and self-directed builds. Hover a card &mdash; more going up as projects wrap up.</p>
+
+      <div class="projects-grid">
+        <article class="project-card tilt-card">
+          <div class="project-top">
+            <span class="project-tag">Coursework</span>
+            <span class="project-status">Semester project &mdash; passed</span>
+          </div>
+          <h3>Microcontroller Systems Project</h3>
+          <p class="project-desc placeholder-text">
+            [Edit me — 2&ndash;3 sentences on what the device did: the problem it solved, the sensors/actuators involved, and the part you're most proud of.]
+          </p>
+          <ul class="project-stack"><li>C</li><li>Arduino / Microcontroller</li></ul>
+          <p class="project-note">Built for Curtin's second-year microcontroller project unit.</p>
+        </article>
+
+        <a class="project-card project-card-ghost tilt-card" href="#contact">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          <h3>Add your next project</h3>
+          <p>Robotics build, FSAE work, a personal Arduino project &mdash; slot it in here.</p>
+        </a>
+
+        <a class="project-card project-card-ghost tilt-card" href="#contact">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          <h3>Space reserved</h3>
+          <p>For whatever you build next semester.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <p class="section-kicker">Achievements</p>
+      <h2 class="section-title">Outside the lab</h2>
+
+      <div class="stat-row">
+        <div class="stat"><span class="stat-value" data-count-to="3.89" data-decimals="2">0.00</span><span class="stat-label">GPA, Foundation Yr</span></div>
+        <div class="stat"><span class="stat-value" data-count-to="8" data-decimals="0">0</span><span class="stat-label">A's at SPM</span></div>
+        <div class="stat"><span class="stat-value" data-count-to="3" data-decimals="0">0</span><span class="stat-label">Languages spoken</span></div>
+        <div class="stat"><span class="stat-value" data-count-to="13" data-decimals="0">0</span><span class="stat-label">Age started competitive squash</span></div>
+      </div>
+
+      <div class="achv-grid">
+        <div class="achv-card">
+          <div class="achv-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3"/></svg>
+          </div>
+          <h3>State Squash Representative</h3>
+          <p>Represented Sarawak in local and international tournaments from age 13.</p>
+        </div>
+        <div class="achv-card">
+          <div class="achv-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7L9 19l-6-6" transform="translate(0 -1)"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>Top 10, National 3D Drawing Competition</h3>
+          <p>Recognised for creative and technical draughting ability.</p>
+        </div>
+        <div class="achv-card">
+          <div class="achv-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+          </div>
+          <h3>Coursera Certified</h3>
+          <p>Introduction to Programming with Python.</p>
+        </div>
+        <div class="achv-card">
+          <div class="achv-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M9 7h6M9 11h6"/></svg>
+          </div>
+          <h3>SPM: 8 A's</h3>
+          <p>Strong academic foundation across all subjects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-kicker">Contact</p>
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-intro">Open to internships, casual engineering-adjacent work, and conversations about mechatronics.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <a class="contact-card__link" href="mailto:aidanwongxc@hotmail.com">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <div><span class="contact-label">Email</span><span class="contact-value">aidanwongxc@hotmail.com</span></div>
+          </a>
+          <button type="button" class="copy-btn" data-copy="aidanwongxc@hotmail.com" aria-label="Copy email address">
+            <svg class="icon-copy" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <svg class="icon-check" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          </button>
+        </div>
+        <div class="contact-card">
+          <a class="contact-card__link" href="tel:+61470246397">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+            <div><span class="contact-label">Phone</span><span class="contact-value">+61 470 246 397</span></div>
+          </a>
+          <button type="button" class="copy-btn" data-copy="+61 470 246 397" aria-label="Copy phone number">
+            <svg class="icon-copy" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <svg class="icon-check" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          </button>
+        </div>
+        <a class="contact-card" href="https://www.linkedin.com/in/aidan-wong-95434132b/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.4 8.75h3.47V21H3.4V8.75zm6.02 0h3.33v1.68h.05c.46-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.35V21h-3.47v-5.42c0-1.29-.02-2.96-1.8-2.96-1.8 0-2.08 1.41-2.08 2.86V21H9.42V8.75z"/></svg>
+          <div><span class="contact-label">LinkedIn</span><span class="contact-value">in/aidan-wong</span></div>
+        </a>
+        <a class="contact-card" href="https://github.com/aidanwxc" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.61-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.74 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          <div><span class="contact-label">GitHub</span><span class="contact-value">aidanwxc</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Aidan Wong Xiu Chen.</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
