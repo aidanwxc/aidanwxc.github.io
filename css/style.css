@@ -347,6 +347,7 @@ h1, h2, h3, dl, p { margin: 0; }
 /* ===== Contact ===== */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: var(--space-4); }
 .contact-card { display: flex; align-items: center; gap: var(--space-2); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding-right: var(--space-3); min-height: 44px; transition: border-color var(--duration-base) var(--ease-out), transform var(--duration-base) var(--ease-out); }
+.contact-card:not(:has(.copy-btn)) { padding-right: 0; }
 .contact-card:hover { border-color: var(--accent); transform: translateY(-3px); }
 .contact-card svg { flex-shrink: 0; color: var(--accent-strong); }
 .contact-label { display: block; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); margin-bottom: 2px; }
