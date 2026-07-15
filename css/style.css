@@ -380,6 +380,16 @@ h1, h2, h3, dl, p { margin: 0; }
   [data-reveal] { opacity: 1; transform: none; transition: none; transition-delay: 0ms; }
 }
 
+/* Once an interactive card has finished revealing, hand transform/transition
+   control back to its own hover/tilt behavior instead of the reveal's slow,
+   staggered transition (which otherwise makes 2nd/3rd grid items feel laggy). */
+.skill-card.is-visible, .project-card.is-visible, .achv-card.is-visible, .contact-card.is-visible {
+  transition: border-color var(--duration-base) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out),
+              box-shadow var(--duration-fast) var(--ease-out);
+  transition-delay: 0ms;
+}
+
 /* Stagger grid children as they cascade in */
 .skills-grid > [data-reveal]:nth-child(1) { --reveal-delay: 0ms; }
 .skills-grid > [data-reveal]:nth-child(2) { --reveal-delay: 80ms; }
